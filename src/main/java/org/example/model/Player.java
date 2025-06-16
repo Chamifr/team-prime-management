@@ -1,4 +1,4 @@
-package org.example;
+package org.example.model;
 
 public class Player {
     private String name;
@@ -11,8 +11,20 @@ public class Player {
         this.highestRank = highestRank;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getMlId() {
+        return mlId;
+    }
+
+    public String getHighestRank() {
+        return highestRank;
+    }
+
+    @Override
     public String toString() {
         return "Name: " + name + ", ML ID: " + mlId + ", Rank: " + highestRank;
     }
 }
-
